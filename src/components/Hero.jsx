@@ -1,9 +1,8 @@
 import { useEffect, useRef } from 'react'
 
 const stats = [
-  { num: '3+', label: 'Tahun pengalaman' },
-  { num: '24', label: 'Proyek selesai' },
-  { num: '12', label: 'Klien puas' },
+  { num: '2+', label: 'Tahun pengalaman' },
+  { num: '10', label: 'Proyek selesai' }
 ]
 
 export default function Hero({ dark }) {
@@ -56,7 +55,7 @@ export default function Hero({ dark }) {
 
             <h1 data-anim className={`text-4xl sm:text-5xl lg:text-[58px] leading-[1.1] mb-5 tracking-tight ${title}`}
               style={{ fontFamily:'Syne, sans-serif', fontWeight:800, opacity:0, transform:'translateY(20px)', transition:'all 0.5s ease' }}>
-              Full Stack<br/><span className="text-[#00C9B1]">Web</span> Developer
+              <span className="text-[#00C9B1]">Web</span> Developer
             </h1>
 
             <p data-anim className={`text-[15px] leading-relaxed max-w-2xl text-justify mx-auto lg:mx-0 mb-8 ${desc}`}
