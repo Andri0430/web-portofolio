@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Environment variables (WAJIB - jangan sampai keupload!)
+.env
+.env.local
+.env.production
+.env.*.local        # tambahan
+
+# Build output
+dist/
+build/              # untuk Create React App
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Cache
+.cache/
+.parcel-cache/
+.vite/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
