@@ -3,28 +3,28 @@ import { useEffect, useRef } from 'react'
 export default function Skills({ dark }) {
 
   const skills = [
-    { name: 'HTML', icon: '🌐', level: 90, cat: 'Frontend' },
-    { name: 'CSS', icon: '🎨', level: 88, cat: 'Frontend' },
-    { name: 'JavaScript', icon: '⚡', level: 85, cat: 'Frontend' },
-    { name: 'React.js', icon: '⚛️', level: 84, cat: 'Frontend' },
+    { name: 'HTML', icon: '🌐', cat: 'Frontend' },
+    { name: 'CSS', icon: '🎨', cat: 'Frontend' },
+    { name: 'JavaScript', icon: '⚡', cat: 'Frontend' },
+    { name: 'React.js', icon: '⚛️', cat: 'Frontend' },
     // BACKEND
-    { name: 'C#', icon: '💠', level: 88, cat: 'Backend' },
-    { name: 'ASP.NET Core', icon: '🧩', level: 86, cat: 'Backend' },
-    { name: 'ASP.NET MVC', icon: '🔧', level: 85, cat: 'Backend' },
-    { name: 'ASP.NET Web API', icon: '🔗', level: 84, cat: 'Backend' },
-    { name: 'Node.js', icon: '🌳', level: 75, cat: 'Backend' },
+    { name: 'C#', icon: '💠', cat: 'Backend' },
+    { name: 'ASP.NET Core', icon: '🧩', cat: 'Backend' },
+    { name: 'ASP.NET MVC', icon: '🔧', cat: 'Backend' },
+    { name: 'ASP.NET Web API', icon: '🔗', cat: 'Backend' },
+    { name: 'Node.js', icon: '🌳', cat: 'Backend' },
     // DATABASE
-    { name: 'SQL Server', icon: '🗄️', level: 90, cat: 'Database' },
-    { name: 'MySQL', icon: '🐬', level: 80, cat: 'Database' },
+    { name: 'SQL Server', icon: '🗄️', cat: 'Database' },
+    { name: 'MySQL', icon: '🐬', cat: 'Database' },
     // TOOLS
-    { name: 'Git', icon: '🔀', level: 85, cat: 'Tools' },
-    { name: 'Postman', icon: '📮', level: 88, cat: 'Tools' },
-    { name: 'Visual Studio', icon: '🟣', level: 90, cat: 'Tools' },
-    { name: 'VS Code', icon: '💻', level: 88, cat: 'Tools' },
-    { name: 'SSMS', icon: '📊', level: 87, cat: 'Tools' },
+    { name: 'Git', icon: '🔀', cat: 'Tools' },
+    { name: 'Postman', icon: '📮', cat: 'Tools' },
+    { name: 'Visual Studio', icon: '🟣', cat: 'Tools' },
+    { name: 'VS Code', icon: '💻', cat: 'Tools' },
+    { name: 'SSMS', icon: '📊', cat: 'Tools' },
   ]
 
-  const extraSkills = [
+const extraSkills = [
     'REST API',
     'LINQ',
     'CRUD',
@@ -32,8 +32,16 @@ export default function Skills({ dark }) {
     'Responsive UI',
     'JSON',
     'API Integration',
-    'Entity Framework'
-  ]
+    'Entity Framework',
+    'Clean Architecture',
+    'Repository Pattern',
+    'Unit of Work',
+    'JWT Authentication',
+    'FluentValidation',
+    'AutoMapper',
+    'Dependency Injection',
+    'SQL Server',
+]
 
   const catColors = {
 
@@ -151,17 +159,6 @@ export default function Skills({ dark }) {
                     {skill.cat}
                   </span>
                 </div>
-                <span className="text-[12px] opacity-60">
-                  {skill.level}%
-                </span>
-              </div>
-              <div className="h-1 rounded-full bg-slate-200 overflow-hidden">
-                <div
-                  ref={(el) => barsRef.current[i] = el}
-                  data-width={skill.level}
-                  className={`h-full rounded-full transition-all duration-700 ${barColors[skill.cat]}`}
-                  style={{ width: 0 }}
-                />
               </div>
             </div>
           ))}

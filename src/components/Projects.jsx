@@ -79,7 +79,7 @@ export default function Projects({ dark }) {
         <div data-anim className="mb-14" style={{ opacity:0, transform:'translateY(20px)', transition:'all 0.5s ease' }}>
           <div className="text-[#00C9B1] text-xs tracking-widest uppercase mb-3" style={{ fontFamily:'JetBrains Mono, monospace' }}>03. Projects</div>
           <h2 className={`text-3xl sm:text-4xl mb-3 ${head}`} style={{ fontFamily:'Syne, sans-serif', fontWeight:800 }}>Proyek Terbaru</h2>
-          <p className={`text-[14px] max-w-md ${sub}`}>Beberapa karya yang sudah saya bangun — dari ide hingga produk nyata.</p>
+          <p className={`text-[14px] max-w-md ${sub}`}>Beberapa project yang sudah saya bangun — dari ide hingga project nyata.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

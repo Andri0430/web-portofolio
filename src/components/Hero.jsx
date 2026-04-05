@@ -94,16 +94,17 @@ export default function Hero({ dark }) {
             <div className="absolute inset-[-20px] rounded-full border border-[#00C9B1]/10 animate-[spin_20s_linear_infinite]"/>
             <div className="absolute inset-[-40px] rounded-full border border-[#00C9B1]/5 animate-[spin_30s_linear_infinite_reverse]"/>
             <div className={`relative w-52 h-52 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full border border-[#00C9B1]/20 flex items-center justify-center overflow-hidden ${dark ? 'bg-[#112040]' : 'bg-slate-100'}`}>
-              <svg viewBox="0 0 120 120" className="w-32 h-32 sm:w-40 sm:h-40 opacity-40">
-                <circle cx="60" cy="42" r="26" fill="#00C9B1"/>
-                <ellipse cx="60" cy="110" rx="40" ry="28" fill="#00C9B1"/>
-              </svg>
+               <img
+                src="/foto_profile.jpg"
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 rounded-full bg-[#00C9B1]/5"/>
             </div>
             <div className={`absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 border border-[#00C9B1]/20 rounded-2xl px-3 py-2 text-[11px] ${dark ? 'bg-[#112040]' : 'bg-white shadow-sm'}`}
               style={{ animation:'float 4s ease-in-out infinite' }}>
-              <div className="text-[#00C9B1] font-medium" style={{ fontFamily:'JetBrains Mono, monospace' }}>&lt;/&gt; React</div>
-              <div className={`text-[10px] ${stat}`}>+ Node.js</div>
+              <div className="text-[#00C9B1] font-medium" style={{ fontFamily:'JetBrains Mono, monospace' }}>&lt;/&gt; .NET/Core</div>
+              <div className={`text-[10px] ${stat}`}>+ React</div>
             </div>
           </div>
         </div>
