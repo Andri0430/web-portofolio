@@ -6,6 +6,7 @@ import Projects  from './components/Projects'
 import Contact   from './components/Contact'
 import Footer    from './components/Footer'
 import BottomNav from './components/BottomNav'
+import Experience from './components/Experience'
 
 const sections = ['about', 'skills', 'projects', 'contact']
 
@@ -40,6 +41,7 @@ export default function App() {
       <Navbar    dark={dark} setDark={setDark} />
       <main className="pb-20 md:pb-0">
         <Hero     dark={dark} />
+        <Experience dark={dark} />
         <Skills   dark={dark} />
         <Projects dark={dark} />
         <Contact  dark={dark} />
