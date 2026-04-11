@@ -82,8 +82,7 @@ const navItems = [
   },
 ]
 
-export default function BottomNav({ active, dark }) {
-  const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+export default function BottomNav({ active, dark, scrollTo }) {
   const bg = dark ? 'bg-[#112040]/95 border-white/[0.06]' : 'bg-white/95 border-slate-200/80'
 
   return (
@@ -92,12 +91,17 @@ export default function BottomNav({ active, dark }) {
         {navItems.map((item) => {
           const isActive = active === item.id
           return (
-            <button key={item.id} onClick={() => scrollTo(item.id)}
+            <button
+              key={item.id}
+              onClick={() => scrollTo(item.id)}
               className="flex flex-col items-center gap-1 px-4 py-1.5 rounded-xl transition-all duration-200"
-              style={{ minWidth:60 }}>
+              style={{ minWidth: 60 }}
+            >
               {item.icon(isActive)}
-              <span className="text-[10px] transition-colors duration-200"
-                style={{ color: isActive ? '#00C9B1' : '#4A6A9A', fontFamily:'DM Sans, sans-serif' }}>
+              <span
+                className="text-[10px] transition-colors duration-200"
+                style={{ color: isActive ? '#00C9B1' : '#4A6A9A', fontFamily: 'DM Sans, sans-serif' }}
+              >
                 {item.label}
               </span>
             </button>
