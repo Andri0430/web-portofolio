@@ -38,17 +38,6 @@ const navItems = [
     ),
   },
   {
-    label: 'Projects', id: 'projects',
-    icon: (active) => (
-      <svg viewBox="0 0 20 20" className="w-5 h-5" fill="none">
-        <rect x="2" y="2" width="7" height="7" rx="1.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
-        <rect x="11" y="2" width="7" height="7" rx="1.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
-        <rect x="2" y="11" width="7" height="7" rx="1.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
-        <rect x="11" y="11" width="7" height="7" rx="1.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
-      </svg>
-    ),
-  },
-  {
     label: 'Certificates', id: 'certificates',
     icon: (active) => (
       <svg viewBox="0 0 20 20" className="w-5 h-5" fill="none">
@@ -64,6 +53,17 @@ const navItems = [
         <path d="M13.8 15l.8.8 1.4-1.4"
           stroke={active ? '#0A1628' : '#4A6A9A'} strokeWidth="1.1"
           strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Projects', id: 'projects',
+    icon: (active) => (
+      <svg viewBox="0 0 20 20" className="w-5 h-5" fill="none">
+        <rect x="2" y="2" width="7" height="7" rx="1.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
+        <rect x="11" y="2" width="7" height="7" rx="1.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
+        <rect x="2" y="11" width="7" height="7" rx="1.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
+        <rect x="11" y="11" width="7" height="7" rx="1.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
       </svg>
     ),
   },
