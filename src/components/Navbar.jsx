@@ -101,7 +101,7 @@ export default function Navbar({ dark, setDark }) {
       </nav>
 
       {/* Mobile menu */}
-      <div className={`md:hidden overflow-hidden transition-all duration-300 border-b ${mobileMenu} ${open ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`md:hidden overflow-hidden transition-all duration-300 border-b ${mobileMenu} ${open ? 'max-h-76 opacity-100' : 'max-h-0 opacity-0'}`}>
         <ul className="px-6 py-4 flex flex-col gap-4">
           {links.map((l) => (
             <li key={l}>

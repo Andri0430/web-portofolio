@@ -9,7 +9,7 @@ import BottomNav from './components/BottomNav'
 import Experience from './components/Experience'
 import Certificates from './components/Certificates'
 
-const sections = ['about', 'skills', 'projects', 'contact']
+const sections = ['about', 'experience', 'skills','certificates', 'projects', 'contact']
 
 export default function App() {
   const [dark, setDark]           = useState(true)

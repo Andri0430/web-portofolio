@@ -21,6 +21,23 @@ const navItems = [
     ),
   },
   {
+    label: 'Experience', id: 'experience',
+    icon: (active) => (
+      <svg viewBox="0 0 20 20" className="w-5 h-5" fill="none">
+        <rect x="2" y="6" width="16" height="11" rx="2"
+          stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3"
+          fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
+        <path d="M7 6V5a2 2 0 014 0v1"
+          stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3"
+          strokeLinecap="round"/>
+        <rect x="6" y="10" width="8" height="1.8" rx="0.9"
+          fill={active ? '#00C9B1' : '#4A6A9A'}/>
+        <rect x="6" y="13" width="5" height="1.8" rx="0.9"
+          fill={active ? 'rgba(0,201,177,0.5)' : '#2A4A7A'}/>
+      </svg>
+    ),
+  },
+  {
     label: 'Projects', id: 'projects',
     icon: (active) => (
       <svg viewBox="0 0 20 20" className="w-5 h-5" fill="none">
@@ -32,11 +49,34 @@ const navItems = [
     ),
   },
   {
+    label: 'Certificates', id: 'certificates',
+    icon: (active) => (
+      <svg viewBox="0 0 20 20" className="w-5 h-5" fill="none">
+        <rect x="2" y="3" width="16" height="12" rx="2"
+          stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3"
+          fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
+        <path d="M6 8h8M6 11h5"
+          stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3"
+          strokeLinecap="round"/>
+        <circle cx="15" cy="15" r="3"
+          fill={active ? '#00C9B1' : '#0A1628'}
+          stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3"/>
+        <path d="M13.8 15l.8.8 1.4-1.4"
+          stroke={active ? '#0A1628' : '#4A6A9A'} strokeWidth="1.1"
+          strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
+  {
     label: 'Contact', id: 'contact',
     icon: (active) => (
       <svg viewBox="0 0 20 20" className="w-5 h-5" fill="none">
-        <rect x="2" y="4" width="16" height="12" rx="2.5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
-        <path d="M2 7l8 5 8-5" stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3" strokeLinecap="round"/>
+        <rect x="2" y="4" width="16" height="12" rx="2.5"
+          stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3"
+          fill={active ? 'rgba(0,201,177,0.1)' : 'none'}/>
+        <path d="M2 7l8 5 8-5"
+          stroke={active ? '#00C9B1' : '#4A6A9A'} strokeWidth="1.3"
+          strokeLinecap="round"/>
       </svg>
     ),
   },
