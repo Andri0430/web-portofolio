@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const links = ['About','Experience', 'Skills', 'Projects', 'Contact']
+const links = ['About','Experience', 'Skills', 'Certificates', 'Projects', 'Contact']
 
 export default function Navbar({ dark, setDark }) {
   const [open, setOpen]       = useState(false)

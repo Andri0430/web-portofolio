@@ -24,7 +24,7 @@ const contacts = [
   {
     label: 'LinkedIn',
     value: 'linkedin.com/in/ahmad',
-    href: 'https://mail.google.com/mail/?view=cm&to=andriansyah0430@gmail.com',
+    href: 'https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile',
     accent: '#60A5FA',
     icon: (
       <svg viewBox="0 0 20 20" className="w-4 h-4" fill="none">

@@ -5,7 +5,7 @@ export default function Footer({ dark }) {
 
   const datas = [
     { name: 'GitHub', href: 'https://github.com/Andri0430' },
-    { name: 'LinkedIn', href: 'https://github.com/Andri0430' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile' },
   ]
 
   return (

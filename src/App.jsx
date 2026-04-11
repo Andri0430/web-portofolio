@@ -7,6 +7,7 @@ import Contact   from './components/Contact'
 import Footer    from './components/Footer'
 import BottomNav from './components/BottomNav'
 import Experience from './components/Experience'
+import Certificates from './components/Certificates'
 
 const sections = ['about', 'skills', 'projects', 'contact']
 
@@ -43,6 +44,7 @@ export default function App() {
         <Hero     dark={dark} />
         <Experience dark={dark} />
         <Skills   dark={dark} />
+        <Certificates dark={dark} />
         <Projects dark={dark} />
         <Contact  dark={dark} />
       </main>
