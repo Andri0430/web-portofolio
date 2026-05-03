@@ -9,7 +9,7 @@ const projects = [
     bg: 'rgba(0,201,177,0.06)',
     border: 'rgba(0,201,177,0.15)',
     year: '2026',
-    link: 'https://dashboard.example.com',
+    link: 'https://github.com/Andri0430/InventoriesApp',
     images: [
       '/projects/dashboard-1.png',
       '/projects/dashboard-2.png',
